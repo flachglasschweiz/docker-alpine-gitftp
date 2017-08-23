@@ -5,10 +5,11 @@ FROM alpine:latest
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install bash, make, curl, git
-RUN apk add --update bash \
-    && make \
-    && curl \
-    && git
+RUN apk update \
+    && apk add bash \
+    && apk add make \
+    && apk add curl \
+    && apk add git
 
 # Create and set WORKDIR to the git-ftp installation folder
 WORKDIR /opt/git-ftp/
