@@ -1,9 +1,6 @@
 # Use an official Alpine Linux as a parent image
 FROM alpine:latest
 
-# Set Debian to non-interactive
-ENV DEBIAN_FRONTEND noninteractive
-
 # Install bash, make, curl, git
 RUN apk update \
     && apk add bash \
