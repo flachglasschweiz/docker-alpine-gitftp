@@ -5,7 +5,7 @@ Dockerfile to automatically build a lightweight Alpine Linux image including the
 This public Docker Hub image is automatically build upon a push on the master branch: <https://hub.docker.com/r/fgch/alpine-gitftp/>
 
 ### Usage
-Reference the image in your bitbucket-pipelines.yml and add the approperiate git-ftp command, example:
+Reference the image in your bitbucket-pipelines.yml and add the appropriate git-ftp command, example:
 
 ```shell
 image: fgch/alpine-gitftp
