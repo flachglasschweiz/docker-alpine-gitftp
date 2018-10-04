@@ -1,5 +1,5 @@
 # Use an official Alpine Linux as a parent image
-FROM alpine:3.6
+FROM alpine:latest
 
 # Install bash, make, curl, git
 RUN apk update \
